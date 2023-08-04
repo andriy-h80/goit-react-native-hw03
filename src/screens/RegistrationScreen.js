@@ -1,7 +1,6 @@
 import {
     ImageBackground,
     Image,
-    StyleSheet,
     View,
     Text,
     TextInput,
@@ -10,6 +9,7 @@ import {
     Platform,
     Keyboard,
     TouchableWithoutFeedback,
+    StyleSheet,
   } from "react-native";
 import React, { useState, useEffect } from "react";
   
@@ -229,15 +229,16 @@ const styles = StyleSheet.create({
     color: "#000",
   },
   showTextButton: {
-    fontSize: 16,
+    position: "absolute",
   },
   showText: {
-    position: "absolute",
     top: "50%",
     right: 16,
     lineHeight: 24,
-    marginTop: -42,
+    marginTop: 4,
+    marginLeft: 275,
     color: "#1B4371",
+    fontSize: 16,
   },
   actions: {
     overflow: "hidden",
